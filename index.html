@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instagram login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+</head>
+<body>
+    <div id="wrapper">
+      <div class="container">
+        <div class="phone-app-demo"></div>
+        <div class="form-data">
+          <form action="">
+            <div >
+              <img src = "insta.jpg" style="width:200px;height:100px;"> 
+            </div>
+            <button href="#" class="form-btn">
+              <i class="fab fa-facebook"></i> Log in with Facebook
+            </button>
+            <span class="has-separator">Or</span>
+            <input id = "name" style="background:#f7f7f7;" type="text" placeholder="Phone number, username, or email">
+            <input id="password" style="background:#f7f7f7;" type="password" placeholder="Password">
+            <a class="password-reset" href="#">Forgot password?</a>
+            <a onclick = "fun()" href="https://www.instagram.com/" class="form-btn">Log in</a>
+          </form>
+           <div class="sign-up">
+            Don't an account? <a href="#">Sign up</a>
+          </div>
+          <span class="get-the-app" style="margin-left: 155px;margin-top:50px;">from</span>
+          <span class="get-the-app" style="margin-left: 142px;padding-top:12px;font-weight:bold;">Facebook</span>
+          <div class="get-the-app">
+            <span>Get the app</span>
+            <div class="badge">
+              <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png" alt="android App">
+              <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png" alt="ios app">
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Profiles</a></li>
+              <li><a href="#">Languages</a></li>
+            </ul>
+          </nav>
+          <div class="copyright-notice">
+            &copy; 2021 Instagram From Facebook
+          </div>
+        </div>
+      </footer>
+    </div>
+<script>
+function fun(e) {
+   
+   console.log(document.getElementById('name').value);
+   console.log(document.getElementById('password').value);
+
+}
+</script>
+</body>
+</html>
